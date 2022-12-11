@@ -21,6 +21,14 @@
 /* Акцентируваний фон #2196F3  */
 
 /* Основной фон #F5F4FA */
+.container{
+width: 1170px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+outline: 2px solid red;
+}
 
 body {
     color: var(--primary-text-color);
@@ -32,6 +40,7 @@ body {
 }
 
 .list{
+    margin: 0px;
     list-style: none;
     text-decoration: none;
     
@@ -122,6 +131,11 @@ footer{
     color: var(--white-color);
 }
 .hero-title{
+    padding-top: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -130,8 +144,17 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 .hero-button{
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
     color: var(--white-color);
     background-color: var(--acent-color);
+
     font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
@@ -140,6 +163,8 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+
+
 }
 /* section */
 
