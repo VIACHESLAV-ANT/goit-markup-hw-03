@@ -21,6 +21,9 @@
 /* Акцентируваний фон #2196F3  */
 
 /* Основной фон #F5F4FA */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
 .container{
 width: 1170px;
 padding-left: 15px;
@@ -28,10 +31,6 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
 outline: 2px solid red;
-}
-
-.p-header{
-background-color: aqua;
 }
 
 body {
@@ -69,6 +68,8 @@ body {
 
 
 /* site nav */
+
+
 
 .navi-link{
     color: var(--primary-text-color);
@@ -133,6 +134,7 @@ footer{
 .hero{
     background-color: var(--bgc-up-color);
     color: var(--white-color);
+    text-align: center;
 }
 .hero-title{
     padding-top: 200px;
@@ -171,6 +173,9 @@ letter-spacing: 0.06em;
 
 }
 /* section */
+.sections{
+    background-color: aquamarine;
+}
 
 .sections-title{
     font-weight: 700;
