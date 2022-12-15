@@ -30,6 +30,10 @@ margin-right: auto;
 outline: 2px solid red;
 }
 
+.p-header{
+background-color: aqua;
+}
+
 body {
     color: var(--primary-text-color);
     background-color: var(--white-color);
