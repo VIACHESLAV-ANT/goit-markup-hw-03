@@ -23,6 +23,7 @@
 /* Основной фон #F5F4FA */
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
+    padding: 0;
 }
 .container{
 width: 1170px;
@@ -31,6 +32,7 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
 outline: 2px solid red;
+box-sizing: border-box;
 }
 
 body {
@@ -42,8 +44,13 @@ body {
     
 }
 
+header .container, nav{
+    display: flex;
+}
+
 .list{
     margin: 0px;
+    padding: 0px;
     list-style: none;
     text-decoration: none;
     
@@ -59,6 +66,7 @@ body {
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
+    
 }
 
 
@@ -69,15 +77,30 @@ body {
 
 /* site nav */
 
+.navi{
+    display: flex;
+}
 
 
+
+.navi .item + .item{
+    margin-left: 50px;
+}
 .navi-link{
+    display: block;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
+}
+
+.kontakt-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -90,12 +113,17 @@ body {
 }
 
 /* kontakt list */
-
+header .kontakt{
+    display: flex;
+}
+header .kontakt .item + .item{
+    margin-left: 50px;
+}
 .kontakt-link{
     color: var(--second-text-color);
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+footer    letter-spacing: 0.02em;
 }
 
 /* Footer */
@@ -118,6 +146,7 @@ footer{
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
+  
 }
 
 .adress{
@@ -137,7 +166,6 @@ footer{
     text-align: center;
 }
 .hero-title{
-    padding-top: 200px;
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -145,7 +173,6 @@ footer{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
@@ -165,7 +192,6 @@ text-transform: uppercase;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -174,7 +200,8 @@ letter-spacing: 0.06em;
 }
 /* section */
 .sections{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    margin-top: 94px;
 }
 
 .sections-title{
@@ -183,6 +210,7 @@ letter-spacing: 0.06em;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 
@@ -190,12 +218,16 @@ letter-spacing: 0.06em;
 
 .invisible{
     color: var(--white-color);
+    width: 0px;
+    height: 0px;
+    margin-bottom: 0px;
 }
 
 .feature-title{
 font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 
 .feature-tekst{
@@ -205,12 +237,17 @@ line-height: 1.71;
 
 /* Team */
 
+.teamn{
+    padding: 94px 15px;
+}
+
 .team-title{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 }
 
 .team-text{
@@ -263,4 +300,8 @@ letter-spacing: 0.03em;
    font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.03em;
+   }
+
+   address{
+    margin-top: 20px;
    }
