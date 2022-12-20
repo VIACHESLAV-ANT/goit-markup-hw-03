@@ -46,6 +46,7 @@ body {
 
 header .container, nav{
     display: flex;
+    align-items: center;
 }
 
 .list{
@@ -72,6 +73,7 @@ header .container, nav{
 
 .logo-black{
     color: var(--logo-color);
+    margin-right: 93px;
 }
 
 
@@ -115,6 +117,7 @@ header .container, nav{
 /* kontakt list */
 header .kontakt{
     display: flex;
+    margin-left: auto;
 }
 header .kontakt .item + .item{
     margin-left: 50px;
@@ -215,6 +218,9 @@ letter-spacing: 0.06em;
 
 
 /* feature */
+.feature{
+    display: flex;
+}
 
 .invisible{
     color: var(--white-color);
@@ -236,6 +242,9 @@ line-height: 1.71;
 }
 
 /* Team */
+.team{
+    display: flex;
+}
 
 .teamn{
     padding: 94px 15px;
@@ -304,4 +313,7 @@ letter-spacing: 0.03em;
 
    address{
     margin-top: 20px;
+   }
+   .work{
+    display: flex;
    }
