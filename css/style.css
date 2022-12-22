@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
 :root{
     --primary-text-color: #212121;
     --second-text-color: #757575;
@@ -21,7 +31,10 @@
 /* Акцентируваний фон #2196F3  */
 
 /* Основной фон #F5F4FA */
-
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
 body {
     color: var(--primary-text-color);
     background-color: var(--white-color);
@@ -34,7 +47,20 @@ body {
 .list{
     list-style: none;
     text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px red solid;
+    margin-left: auto;
+    margin-right: auto;
     
+}
+
+.sections .container{
+    margin-top: 94px;
 }
 
 /* Header */
@@ -104,12 +130,22 @@ footer{
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 9px;
 }
 
-.adress{
+address{
     color: var(--white-color);
+    margin-top: 20px;
 }
 
+footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+   }
+
+   .adress{
+    margin-top: 0;
+   }
 
 
 /* Index */
@@ -120,18 +156,27 @@ footer{
 .hero{
     background-color: var(--bgc-up-color);
     color: var(--white-color);
+
+    text-align: center;
 }
+
+.hero .container{
+    padding: 200px 235px;
+}
+
 .hero-title{
 font-weight: 900;
 font-size: 44px;
-line-height: 1.36;
-text-align: center;
+line-height: 1.36; 
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
+width: 696px;
 }
 .hero-button{
     color: var(--white-color);
     background-color: var(--acent-color);
+
     font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
@@ -140,6 +185,13 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+
+display: inline-block;
+border-radius: 4px;
+padding: 10px 32px;
+border: 0px;
+min-width: 200px;
+margin-top: 30px;
 }
 /* section */
 
@@ -156,6 +208,11 @@ letter-spacing: 0.06em;
 
 .invisible{
     color: var(--white-color);
+
+    width: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
 }
 
 .feature-title{
@@ -167,9 +224,24 @@ text-transform: uppercase;
 .feature-tekst{
 color: var(--second-text-color);
 line-height: 1.71;
+
+margin-top: 10px;
+}
+/* work */
+
+.work{
+    margin-top: 50px;
 }
 
 /* Team */
+
+.allteam{
+    background-color: var(--bgc-color);
+}
+.team{
+    display: flex;
+    margin-top: 50px;
+}
 
 .team-title{
 font-weight: 500;
@@ -177,6 +249,8 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+
+margin-top: 30px;
 }
 
 .team-text{
@@ -185,7 +259,14 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+
+margin-top: 10px;
 } 
+
+.allteam .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 
 
@@ -208,6 +289,11 @@ letter-spacing: 0.03em;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0px;
+    min-width: ;
    }
    
    .portfolio-button:hover,
@@ -215,7 +301,11 @@ letter-spacing: 0.03em;
        color: var(--white-color);
     background-color:var(--acent-color);
    }
-   
+   .galery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+   }
    .galery-title{
     color: var(--primary-text-color);
    font-weight: 700;
@@ -229,4 +319,36 @@ letter-spacing: 0.03em;
    font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.03em;
+
+   margin-top: 4px;
    }
+
+   .team-person{
+    padding-bottom: 30px;
+    outline: 1px red solid;
+    background-color: var(--white-color);
+   }
+
+   .portfolio{
+    display: flex;
+    padding-bottom: 16px;
+    outline: 2px red solid;
+    width: 611px;
+   }
+
+   .galery-box{
+    outline: 2px red solid;
+    width: 370px;
+    height: 404px;
+    margin-top: 30px;
+   }
+
+   .galery-box-text{
+    outline: 2px red solid;
+    margin: 20px 24px;
+   }
+
+   .mtop{
+    margin-top: 94px;
+   }
+
