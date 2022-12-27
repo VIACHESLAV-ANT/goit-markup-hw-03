@@ -55,6 +55,9 @@ body {
 }
 
 /* Header */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .nav, header nav{
     display: flex;
 }
@@ -112,7 +115,7 @@ header .logo{
 }
 
 /* contakts list */
-header .contakts{
+.header .contakts{
     display: flex;
     margin-left: auto;
 }
@@ -214,7 +217,7 @@ margin-top: 30px;
 }
 /* section */
 
-.sections-title{
+.section-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -222,7 +225,7 @@ margin-top: 30px;
     letter-spacing: 0.03em;
 }
 
-.sections{
+.section{
     padding: 94px 0;
 }
 
@@ -274,7 +277,7 @@ margin-top: 10px;
     margin-right: 30px;
 }
 
-.works-sections{
+.works-section{
     padding-top: 0px;
 }
 
