@@ -1,11 +1,6 @@
 html{
     box-sizing: border-box;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
 
 
 :root{
@@ -59,10 +54,6 @@ body {
     
 }
 
-.sections .container{
-    margin-top: 94px;
-}
-
 /* Header */
 .nav, header nav{
     display: flex;
@@ -81,6 +72,10 @@ body {
 
 .logo-black{
     color: var(--logo-color);
+    
+}
+
+.logo-container{
     margin-right: 93px;
 }
 
@@ -110,14 +105,14 @@ header .logo{
 
 .navi-link:hover,
 .navi-link:focus,
-.kontakt-link:hover,
-.kontakt-link:focus,
+.contakts-link:hover,
+.contakts-link:focus,
 .active{
     color: var(--acent-color);
 }
 
-/* kontakt list */
-header .kontakt{
+/* contakts list */
+header .contakts{
     display: flex;
     margin-left: auto;
 }
@@ -126,7 +121,7 @@ header .kontakt{
     margin-right: 50px;
 }
 
-.kontakt-link{
+.contakts-link{
     color: var(--second-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -139,9 +134,12 @@ header .kontakt{
 
 /* Footer */
 
-footer{
+.footer{
     background-color: var(--bgc-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
 .logo-white{
     color: var(--white-color);
 }
@@ -152,7 +150,7 @@ footer{
     letter-spacing: 0.03em;
 }
 
-.kontakt-footer{
+.contakts-footer{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
@@ -165,10 +163,6 @@ address{
     margin-top: 20px;
 }
 
-footer .container{
-    padding-top: 60px;
-    padding-bottom: 60px;
-   }
 
    .adress{
     margin-top: 0;
@@ -185,9 +179,6 @@ footer .container{
     color: var(--white-color);
 
     text-align: center;
-}
-
-.hero .container{
     padding: 200px 237px;
 }
 
@@ -197,7 +188,8 @@ font-size: 44px;
 line-height: 1.36; 
 letter-spacing: 0.06em;
 text-transform: uppercase;
-
+margin-left: auto;
+margin-right: auto;
 width: 696px;
 }
 .hero-button{
@@ -230,6 +222,10 @@ margin-top: 30px;
     letter-spacing: 0.03em;
 }
 
+.sections{
+    padding: 94px 0;
+}
+
 
 /* feature */
 
@@ -242,12 +238,17 @@ margin-top: 30px;
 }
 
 .invisible{
-    color: var(--white-color);
-
-    width: 0;
-    padding: 0;
-    margin: 0;
-    height: 0;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 .feature-title{
@@ -273,9 +274,19 @@ margin-top: 10px;
     margin-right: 30px;
 }
 
+.works-sections{
+    padding-top: 0px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Team */
 
-.allteam{
+.team-section{
     background-color: var(--bgc-color);
 }
 .team{
@@ -289,8 +300,11 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+}
 
-margin-top: 30px;
+.team-container{
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .team-text{
@@ -303,10 +317,6 @@ letter-spacing: 0.03em;
 margin-top: 10px;
 } 
 
-.allteam .container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 
 
@@ -347,7 +357,8 @@ margin-top: 10px;
    .galery{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
+    gap: 30px;
    }
    .galery-title{
     color: var(--primary-text-color);
@@ -367,9 +378,10 @@ margin-top: 10px;
    }
 
    .team-person{
-    padding-bottom: 30px;
     /* outline: 1px red solid; */
     background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
    }
    .team-person:not(:last-child){
     margin-right: 30px;
@@ -377,20 +389,8 @@ margin-top: 10px;
 
    .portfolio{
     display: flex;
-    padding-bottom: 16px;
+    justify-content: center;
     /* outline: 2px red solid; */
-    width: 612px;
-    margin-left: auto;
-    margin-right: auto;
-   }
-
-   .galery-box{
-    /* outline: 2px red solid; */
-    width: 370px;
-    height: 404px;
-    margin-top: 30px;
-    margin-right: 30px;
-
    }
 
    .galery-box:nth-child(3n){
@@ -399,7 +399,7 @@ margin-top: 10px;
 
    .galery-box-text{
     /* outline: 2px red solid; */
-    margin: 20px 24px;
+    padding: 20px 24px;
    }
 
    .mtop{
