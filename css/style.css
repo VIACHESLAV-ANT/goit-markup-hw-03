@@ -158,18 +158,11 @@ header .logo{
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-top: 9px;
 }
 
-address{
+.adress{
     color: var(--white-color);
-    margin-top: 20px;
 }
-
-
-   .adress{
-    margin-top: 0;
-   }
 
 
 /* Index */
@@ -182,7 +175,7 @@ address{
     color: var(--white-color);
 
     text-align: center;
-    padding: 200px 237px;
+    padding: 200px 0;
 }
 
 .hero-title{
@@ -403,9 +396,20 @@ margin-top: 10px;
    .galery-box-text{
     /* outline: 2px red solid; */
     padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
    }
 
    .mtop{
     margin-top: 94px;
+   }
+
+   .contakts-item{
+    margin-top: 9px;
+   }
+
+   .contakts-item-adress{
+    margin-top: 20px;
    }
 
